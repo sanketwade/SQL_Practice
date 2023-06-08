@@ -1,0 +1,73 @@
+-- commdad for create database
+CREATE database Test;
+CREATE database	BigDataBootComp;
+
+-- command for show databases 
+SHOW databases;
+
+-- Command for drop database
+drop database test;
+-- Check whether data base drop or not 
+SHOW databases;
+
+-- TABLE--
+-- command for create table 
+-- activate database to go inside perticular database or use perticular database
+USE bigdatabootcomp;
+create table if not exists sales
+(
+id int,
+product_id int,
+sale_data date,
+sale_amount decimal(5,2),
+store_id int
+);
+
+create table if not exists Author
+(
+id int,
+name varchar(50)
+);
+
+create table Books
+(
+id int,
+tite varchar(50),
+atho_id int
+);
+
+create table if not exists Student
+(
+id int,
+name varchar(50),
+major_id int
+);
+
+create table if not exists Majors
+(
+id int,
+major varchar(10),
+department_id int
+);
+
+create table if not exists Department(
+id int, 
+department varchar(20)
+);
+
+create table if not exists Employees(
+id int,
+name varchar(20),
+salary int,
+role varchar(20)
+);
+
+-- Check the table Scheama(table = Employees)
+
+show create table Employees;
+
+-- Check the list of tale available in selected databases 
+
+show tables;
+
+
